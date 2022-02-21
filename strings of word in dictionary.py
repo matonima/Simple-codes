@@ -19,12 +19,12 @@ def can_segment_string(s, dictionary):
     s=clean_quote
     for i in range(1, len(s) + 1):
         
-        first = s[0:i]
+        first_word = s[0:i]
         #print(i,first)
-        if first in dictionary:
-            second = s[i:]
+        if first_word in dictionary:
+            second_word = s[i:]
             print(i,first,second)
-            if not second or second in dictionary or can_segment_string(second, dictionary):
+            if not second_word or second_word in dictionary or can_segment_string(second_word, dictionary):
                 y= True
             else:
                 y=False
