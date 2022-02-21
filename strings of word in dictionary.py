@@ -23,11 +23,11 @@ def can_segment_string(s, dictionary):
         #print(i,first)
         if first_word in dictionary:
             second_word = s[i:]
-            print(i,first,second)
+            print(i,first_word,second_word)
             if not second_word or second_word in dictionary or can_segment_string(second_word, dictionary):
-                y= True
+                y= "can segment"
             else:
-                y=False
+                y= "cannot segment"
             return y
   
 my_dictionary="apple","pie","not","hi","be","gone","evil","witch","thou","art","not","welcome"
