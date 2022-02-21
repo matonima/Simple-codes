@@ -25,6 +25,7 @@ def can_segment_string(s, dictionary):
             second_word = s[i:]
             print(i,first_word,second_word)
             if not second_word or second_word in dictionary or can_segment_string(second_word, dictionary):
+          # no 2nd word exists or 2nd word exists           or 2nd word goes through the funtion and find more words
                 y= "can segment"
             else:
                 y= "cannot segment"
